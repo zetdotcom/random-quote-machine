@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
+
+html, body {
+    background: url(https://s-media-cache-ak0.pinimg.com/originals/ca/2a/32/ca2a3278e8784d5055ea7002c7966f5c.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Lato', 'Arial', sans-serif;   
+    font-size: 120%;
+    height: 100vh;
+    
+    }
+#quotes {
+  position: relative;
+  margin-top: 40px;
+  min-height: 250px;
+  width: auto;
+  opacity: 0.8
+  
+}
+.container {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  border: 1px solid rgba(100, 100, 100, .4);
+  width: 50%; 
+  min-width: 310px;
+  background: linear-gradient(to top, grey, rgba(0,0,0,));
+  padding: 8px;
+  transition: box-shadow .15s;
+  
+}
+
+.container:hover {
+  box-shadow: 0 0 60px #eee;
+}
+
+hr {
+  color: black;
+  opacity: 0.5;
+}
+
+#button {
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  opacity: 0.65;
+  font-size: 70%;
+  border-radius: 5px;
+  padding: 7px;
+  cursor: pointer; 
+  transition: all .2s;
+}
+
+#button:hover {
+  position: relative;
+  border-color: rgb(216, 19, 26);
+  background-color: rgb(216, 19, 26, 0.8) /*Fallback */;
+  background-color:#d8131a;
+  color: white;
+}
+
+.share-buttons { 
+  text-align: center;
+}
+
+.share-buttons div {
+  
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 2px;
+  cursor: pointer;
+  margin-top: 3px;
+  transition: background-color 0.3s
+  
+}
+
+.share-buttons-tweet:hover {
+  background-color: #79e8ff; 
+}
+
+.share-buttons-facebook:hover {
+  background-color: #3235d8;
+}
+
+.share-buttons div, p {
+  display: inline-block;
+  font-size: 90%;
+  margin-left: 2px;
+  margin-right: 2px;
+  
+}
+
+
+
+
+@media screen and (max-width: 730px) {
+ 
+ .container {
+    width: 75%;
+    margin: auto;  
+  
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+    margin: auto;
+    font-size: 90%;
+  }
+  
+}
+
+
+
+  
